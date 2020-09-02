@@ -16,6 +16,7 @@ gems_path=vendor/gems
 rm -rf "${DIR}/.bundle"
 bundle config set path "${gems_path}"
 bundle check 2>&1 > /dev/null || {
-  bundle binstubs
+  bundle install
+  bundle package
   bundle clean
 }
