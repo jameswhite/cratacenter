@@ -11,7 +11,7 @@ github_username: jameswhite
 # Build settings
 markdown: kramdown
 
-exclude: ["Gemfile", "deploy.sh", "README.md", "Gemfile.lock", ".gitignore", "screenshots", "Brewfile", "script/bootstrap"]
+exclude: ["Gemfile", "deploy.sh", "README.md", "Gemfile.lock", ".gitignore", "screenshots", "Brewfile", "script", "vendor"]
 
 # See http://jekyllrb.com/docs/permalinks/
 permalink: /:year/:month/:day/:title/index.html
