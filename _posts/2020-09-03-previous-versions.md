@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Previous versions of the home lab"
-date: 2020-03-08 09:12:00 -0600
+date: 2020-09-03 09:12:00 -0600
 ---
 
 <p>I just wanted to write down some of the things that led to the cratacenter. My co-workers and I worked out of co-working spaces from Aug 2014 - Sept 2020. We had some virtual private servers out on the internet we used to run some of our infrastructure but had an idea to run more. I bought some refurbished mac minis and put VMware ESXi on them and attached them to some storage on an 12U rack next to my desk.</p> <br>
