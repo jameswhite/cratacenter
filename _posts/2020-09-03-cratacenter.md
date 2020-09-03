@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Previous versions of the home lab"
+title: "cratacenter 2.0"
 date: 2020-09-03 09:12:00 -0600
 ---
 
