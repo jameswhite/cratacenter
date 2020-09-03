@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Previous versions of the home lab</title>
+  <meta name="description" content="I just wanted to write down some of the things that led to the cratacenter. My co-workers and I worked out of co-working spaces from Aug 2014 - Sept 2020. We...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2020/03/08/previous-versions.html">
+  <link rel="alternate" type="application/rss+xml" title="cratacenter" href="http://localhost:4000/feed.xml">
+</head>
+
+  <body>
+    <header class="header site-header">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-10">
+        <nav class="nav">
+          <div class="nav-left">
+            <a class="nav-item title" href="/">
+              <img src="/images/cratacenter-logo.gif" alt="cratacenter" />
+            </a>
+          </div>
+          <a class="nav-toggle" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="nav-right nav-menu">
+            
+              
+            
+              
+                <a class="is-tab nav-item" href="/">cratacenter</a>
+              
+            
+              
+            
+              
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="section">
+      <div class="container content">
+        <article class="page content">
+  <div class="columns">
+    <div class="column is-offset-1 is-10">
+      <p>I just wanted to write down some of the things that led to the cratacenter. My co-workers and I worked out of co-working spaces from Aug 2014 - Sept 2020. We had some virtual private servers out on the internet we used to run some of our infrastructure but had an idea to run more. I bought some refurbished mac minis and put VMware ESXi on them and attached them to some storage on an 12U rack next to my desk.</p>
+<p><br />
+<a href="/images/2020-09-03-version-a.jpeg"><img src="/images/2020-09-03-version-a.jpeg" width="25%" height="25%" /></a></p>
+
+<p>I then bought some shelves and <a href="https://www.thingiverse.com/thing:97256"> 3D printed some vertical stands </a> for the mac minis.</p>
+<p><br />
+<a href="/images/2020-09-03-version-b.jpeg"><img src="/images/2020-09-03-version-b.jpeg" width="25%" height="25%" /></a></p>
+
+<p>As money permitted, I'd add a node to the cluster</p>
+<p><br />
+<a href="/images/2020-09-03-version-c.jpeg"><img src="/images/2020-09-03-version-c.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-version-c1.jpeg"><img src="/images/2020-09-03-version-c1.jpeg" width="25%" height="25%" /></a></p>
+
+<p>The mac minis were limited to 16GB of RAM and that became a problem so we found some supermicros that were a similar form factor to replace them.</p>
+<p><br />
+<a href="/images/2020-09-03-supermicro-a.jpeg"><img src="/images/2020-09-03-supermicro-a.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-supermicro-b.jpeg"><img src="/images/2020-09-03-supermicro-b.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-supermicro-c.jpeg"><img src="/images/2020-09-03-supermicro-c.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-supermicro-d.jpeg"><img src="/images/2020-09-03-supermicro-d.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-supermicro-e.jpeg"><img src="/images/2020-09-03-supermicro-e.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-supermicro-f.jpeg"><img src="/images/2020-09-03-supermicro-f.jpeg" width="25%" height="25%" /></a></p>
+<video width="200" height="150" name="Supermicro" controls="controls">
+  <!--  ffmpeg -i 2020-09-03-supermicro-g.mov -vcodec h264 -acodec mp2 2020-09-03-supermicro-g.mp4 -->
+  <source src="/images/2020-09-03-supermicro-g.mp4" type="video/mp4" />
+</video>
+<p><br /></p>
+
+<p>I wanted to see if we could get some redundant firewalls going so I got two net-6501s from Soekris and put them together in an OpenBSD CARP configuration.</p>
+<p><br />
+<a href="/images/2020-09-03-soekris-a.jpeg"><img src="/images/2020-09-03-soekris-a.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-soekris-b.jpeg"><img src="/images/2020-09-03-soekris-b.jpeg" width="25%" height="25%" /></a></p>
+
+<p>One problem with this is that when we moved co-working spaces, it was a real hassle to un-plug everythingand get it re-cabled.</p>
+<p><br /></p>
+<nobr>
+<a href="/images/2020-09-03-thebikeshed-a.jpeg"><img src="/images/2020-09-03-thebikeshed-a.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-thebikeshed-b.jpeg"><img src="/images/2020-09-03-thebikeshed-b.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-thebikeshed-c.jpeg"><img src="/images/2020-09-03-thebikeshed-c.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-thebikeshed-d.jpeg"><img src="/images/2020-09-03-thebikeshed-d.jpeg" width="25%" height="25%" /></a>
+</nobr>
+<p><br /></p>
+
+<p>Meanwhile, I took the old hardware to my apartment and started a second build-out (for lack of a better term) there.</p>
+<p><br />
+<a href="/images/2020-09-03-cumberland-a.jpeg"><img src="/images/2020-09-03-cumberland-a.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-cumberland-b.jpeg"><img src="/images/2020-09-03-cumberland-b.jpeg" width="25%" height="25%" /></a></p>
+
+<p>Eventually I moved it into cubby holes. This was the first proto-cratacenter.</p>
+<p><a href="/images/2020-09-03-cumberland-c.jpeg"><img src="/images/2020-09-03-cumberland-c.jpeg" width="25%" height="25%" /></a></p>
+
+<p>But then we had the idea about making it portable. I got a couple medium sized crates and put the UPS and NAS in one, the routers and servers in the other</p>
+<p><br /></p>
+<nobr>
+<a href="/images/2020-09-03-cratacenter-1-a.jpeg"><img src="/images/2020-09-03-cratacenter-1-a.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-cratacenter-1-b.jpeg"><img src="/images/2020-09-03-cratacenter-1-b.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-cratacenter-1-c.jpeg"><img src="/images/2020-09-03-cratacenter-1-c.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-cratacenter-1-d.jpeg"><img src="/images/2020-09-03-cratacenter-1-d.jpeg" width="25%" height="25%" /></a>
+</nobr>
+<p><br /></p>
+
+<p>I didn't like the need for the second crate. While it was portable, it was difficult to move around. So I ordered 2 large crates. The second crate works as a lid, and as a dolly (as it has casters, but they fit in the other crate when using as a lid.) And everything is self contained. Only one power calble and one (or two, for redundancy) uplink cables leave the crate.</p>
+<p><br />
+<a href="/images/2020-09-03-cratacenter-1-e.jpeg"><img src="/images/2020-09-03-cratacenter-1-e.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-cratacenter-1-f.jpeg"><img src="/images/2020-09-03-cratacenter-1-f.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-cratacenter-1-g.jpeg"><img src="/images/2020-09-03-cratacenter-1-g.jpeg" width="25%" height="25%" /></a></p>
+
+<p>This made for a super-portable setup that could just get rolled to the garage, tossed in a trunk and relocated.</p>
+<p><br />
+<a href="/images/2020-09-03-cratacenter-1-h.jpeg"><img src="/images/2020-09-03-cratacenter-1-h.jpeg" width="25%" height="25%" /></a>
+<a href="/images/2020-09-03-cratacenter-1-i.jpeg"><img src="/images/2020-09-03-cratacenter-1-i.jpeg" width="25%" height="25%" /></a></p>
+
+    </div>
+  </div>
+</article>
+
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-5">
+        <ul class="contact-list">
+          
+          <li><a href="/feed.xml">Subscribe via RSS</a></li>
+        </ul>
+      </div>
+      <div class="column is-5">
+        <ul class="social-media-list has-text-right">
+          
+
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/js/main.js"></script>
+
+  </body>
+</html>

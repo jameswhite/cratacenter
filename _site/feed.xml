@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cratacenter</title>
+    <description>cratacenter deployment and configuration</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 03 Sep 2020 13:27:11 -0500</pubDate>
+    <lastBuildDate>Thu, 03 Sep 2020 13:27:11 -0500</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Previous versions of the home lab</title>
+        <description>&lt;p&gt;I just wanted to write down some of the things that led to the cratacenter. My co-workers and I worked out of co-working spaces from Aug 2014 - Sept 2020. We had some virtual private servers out on the internet we used to run some of our infrastructure but had an idea to run more. I bought some refurbished mac minis and put VMware ESXi on them and attached them to some storage on an 12U rack next to my desk.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-version-a.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-version-a.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I then bought some shelves and &lt;a href=&quot;https://www.thingiverse.com/thing:97256&quot;&gt; 3D printed some vertical stands &lt;/a&gt; for the mac minis.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-version-b.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-version-b.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As money permitted, I'd add a node to the cluster&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-version-c.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-version-c.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-version-c1.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-version-c1.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The mac minis were limited to 16GB of RAM and that became a problem so we found some supermicros that were a similar form factor to replace them.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-supermicro-a.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-supermicro-a.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-supermicro-b.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-supermicro-b.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-supermicro-c.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-supermicro-c.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-supermicro-d.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-supermicro-d.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-supermicro-e.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-supermicro-e.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-supermicro-f.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-supermicro-f.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;video width=&quot;200&quot; height=&quot;150&quot; name=&quot;Supermicro&quot; controls=&quot;controls&quot;&gt;
+  &lt;!--  ffmpeg -i 2020-09-03-supermicro-g.mov -vcodec h264 -acodec mp2 2020-09-03-supermicro-g.mp4 --&gt;
+  &lt;source src=&quot;/images/2020-09-03-supermicro-g.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I wanted to see if we could get some redundant firewalls going so I got two net-6501s from Soekris and put them together in an OpenBSD CARP configuration.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-soekris-a.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-soekris-a.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-soekris-b.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-soekris-b.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One problem with this is that when we moved co-working spaces, it was a real hassle to un-plug everythingand get it re-cabled.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;nobr&gt;
+&lt;a href=&quot;/images/2020-09-03-thebikeshed-a.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-thebikeshed-a.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-thebikeshed-b.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-thebikeshed-b.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-thebikeshed-c.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-thebikeshed-c.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-thebikeshed-d.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-thebikeshed-d.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;/nobr&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, I took the old hardware to my apartment and started a second build-out (for lack of a better term) there.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-cumberland-a.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cumberland-a.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-cumberland-b.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cumberland-b.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Eventually I moved it into cubby holes. This was the first proto-cratacenter.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/2020-09-03-cumberland-c.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cumberland-c.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;But then we had the idea about making it portable. I got a couple medium sized crates and put the UPS and NAS in one, the routers and servers in the other&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;nobr&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-a.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-a.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-b.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-b.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-c.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-c.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-d.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-d.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;/nobr&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I didn't like the need for the second crate. While it was portable, it was difficult to move around. So I ordered 2 large crates. The second crate works as a lid, and as a dolly (as it has casters, but they fit in the other crate when using as a lid.) And everything is self contained. Only one power calble and one (or two, for redundancy) uplink cables leave the crate.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-e.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-e.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-f.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-f.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-g.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-g.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This made for a super-portable setup that could just get rolled to the garage, tossed in a trunk and relocated.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-h.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-h.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;/images/2020-09-03-cratacenter-1-i.jpeg&quot;&gt;&lt;img src=&quot;/images/2020-09-03-cratacenter-1-i.jpeg&quot; width=&quot;25%&quot; height=&quot;25%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Mar 2020 10:12:00 -0500</pubDate>
+        <link>http://localhost:4000/2020/03/08/previous-versions.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/03/08/previous-versions.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
