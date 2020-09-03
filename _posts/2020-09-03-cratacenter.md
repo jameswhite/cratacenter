@@ -62,7 +62,3 @@ date: 2020-09-03 09:12:00 -0600
 <p>This made for a super-portable setup that could just get rolled to the garage, tossed in a trunk and relocated.</p><br>
 <a href="/images/2020-09-03-cratacenter-1-h.jpeg"><img src="/images/2020-09-03-cratacenter-1-h.jpeg" width="25%" height="25%"></a>
 <a href="/images/2020-09-03-cratacenter-1-i.jpeg"><img src="/images/2020-09-03-cratacenter-1-i.jpeg" width="25%" height="25%"></a>
-
-
-<p></p><br>
-<a href="/images/2020-09-03-.jpeg"><img src="/images/2020-09-03-.jpeg" width="25%" height="25%"></a>
