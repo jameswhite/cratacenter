@@ -1,0 +1,27 @@
+<header class="header site-header">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-10">
+        <nav class="nav">
+          <div class="nav-left">
+            <a class="nav-item title" href="{{ site.baseurl }}/">
+              <img src="{{ '/images/jameswhite-logo.gif' }}" alt="{{ site.title }}" />
+            </a>
+          </div>
+          <a class="nav-toggle" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="nav-right nav-menu">
+            {% for my_page in site.pages %}
+              {% if my_page.title %}
+                <a class="is-tab nav-item{% if page.url == my_page.url %} is-active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

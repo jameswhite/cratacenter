@@ -1,0 +1,274 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "bulma";
+
+$bg-color: #f8f8f8;
+$footer-bg-color: #F7F1E3;
+
+$text-color: #47494E;
+$link-color: darken(#BAA754, 20%);
+$link-hover-color: #463D1F;
+$visited-link-color: darken(#BAA754, 10%);
+$footer-text-color: lighten(#463D1F, 20%);
+$footer-link-color: darken($link-color, 10%);
+$footer-link-hover-color: darken($link-hover-color, 20%);
+
+$border-color: #BAA754;
+
+$color-transition: color 0.15s ease-in-out;
+
+.header a:visited,
+.header a:active {
+  color: $link-color;
+}
+
+.header .nav-item.is-active,
+.nav-item a.is-tab.is-active,
+a.nav-item.is-tab.is-active {
+  color: $text-color;
+}
+
+.nav-item a.is-tab.is-active,
+a.nav-item.is-tab.is-active,
+.nav-item a.is-tab:hover,
+a.nav-item.is-tab:hover {
+  border-bottom-color: $border-color;
+}
+
+a,
+a:link {
+  color: $link-color;
+  transition: $color-transition;
+  -webkit-transition: $color-transition;
+
+  .icon {
+    > svg {
+      path {
+        fill: $link-color;
+        transition: fill 0.15s ease-in-out;
+        -webkit-transition: fill 0.15s ease-in-out;
+      }
+    }
+  }
+}
+
+a:visited,
+a:active,
+.content a:visited,
+.content a:active {
+  color: $visited-link-color;
+
+  .icon {
+    > svg {
+      path {
+        fill: $visited-link-color;
+      }
+    }
+  }
+}
+
+a:hover,
+a:focus,
+.header a:hover,
+.header a:focus,
+.content a:hover,
+.content a:focus {
+  color: $link-hover-color;
+
+  .icon {
+    > svg {
+      path {
+        fill: $link-hover-color;
+      }
+    }
+  }
+}
+
+.content a {
+  border-bottom: 0;
+}
+
+.content .card-content ul {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 1em;
+
+  li {
+    + li {
+      margin-top: 1em;
+    }
+  }
+}
+
+body,
+.section,
+.nav {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main.section {
+  flex: 1 0 auto;
+}
+
+.icon {
+  font-size: inherit;
+  line-height: inherit;
+  height: 16px;
+
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+    path {
+      fill: $text-color;
+    }
+  }
+}
+
+.site-header {
+  padding: 40px 0 0;
+
+  .nav-item img {
+    max-height: 3rem;
+  }
+
+  .separator {
+    color: $text-color;
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .title {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.footer {
+  background-color: $footer-bg-color;
+
+  &,
+  .subtitle {
+    color: $footer-text-color;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:active {
+    color: $footer-link-color;
+
+    .icon {
+      > svg {
+        path {
+          fill: $footer-link-color;
+        }
+      }
+    }
+  }
+
+  a:hover,
+  a:focus {
+    color: $footer-link-hover-color;
+
+    .icon {
+      > svg {
+        path {
+          fill: $footer-link-hover-color;
+        }
+      }
+    }
+  }
+
+  a:not(.icon),
+  a:visited:not(.icon) {
+    border-bottom: 0;
+  }
+}
+
+.photo-link {
+  display: block;
+}
+
+.photo-tiles {
+  align-items: center;
+
+  .tile {
+    align-items: center;
+
+    &.is-vertical {
+      align-items: center;
+
+      > .tile:not(.is-parent) {
+        align-items: center;
+      }
+    }
+
+    &.is-parent {
+      align-items: flex-start;
+    }
+  }
+}
+
+.goal {
+  font-size: 18px;
+}
+
+.card.map-card {
+  width: 513px;
+  max-width: 100%;
+}
+
+.main-intro-text {
+  padding-right: 40px;
+}
+
+.dashboard-cards {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .site-header {
+    .nav {
+      align-items: center;
+    }
+
+    .nav-left {
+      flex-direction: column;
+    }
+
+    .nav-item img {
+      max-height: 50px;
+    }
+
+    .nav-item.title {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      .separator {
+        display: none;
+      }
+
+      + .nav-item.title {
+        padding-top: 0;
+        font-size: 24px;
+      }
+    }
+  }
+}
+

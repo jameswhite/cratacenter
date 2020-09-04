@@ -1,0 +1,6 @@
+.bundle
+bin
+tmp
+vendor/gems
+_site
+.*.swp
