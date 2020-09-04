@@ -57,3 +57,4 @@ date: 2020-09-04 11:00:00 -0500
 
 <p>Put the blue lid on and then mounted it in the rack. Redundant firewalls, redundant, switches. There is the small matter that it *will* require down-time if an APU4 should fail. But it won't be unsheduled downtime.</p><br>
 <a href="/images/2020-09-04-rack-matrix-q.jpeg"><img src="/images/2020-09-04-rack-matrix-q.jpeg" width="25%" height="25%"></a>
+
