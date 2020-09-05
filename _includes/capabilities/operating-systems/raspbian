@@ -1,0 +1,6 @@
+raspbian:
+  prereqs:
+   - hosts/raspberry-pi
+  capabilities:
+   - file-editing
+   - file-transfer

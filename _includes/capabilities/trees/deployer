@@ -1,0 +1,9 @@
+hosts:macbook-pro ─┐
+os:macos ──────────┤
+                   └ platform:workstation ─┐
+                                           ├ image-burning ─┐
+                                           ├ file-editing  ─┤
+                                           └ file-transfer ─┤
+hosts:kano-kit ─────────────────────────────────────────────┤
+os:raspbian ────────────────────────────────────────────────┤
+                                                            └ platform:deployer

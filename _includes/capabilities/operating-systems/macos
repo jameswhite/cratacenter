@@ -1,0 +1,6 @@
+macos:
+  prereqs:
+   - hosts/macbook-pro || hosts/macbook-air || hosts/imac
+  capabilities:
+   - file-editing
+   - file-transfer

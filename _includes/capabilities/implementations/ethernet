@@ -1,0 +1,6 @@
+ethernet
+  prereqs:
+    - ethernet port
+    - ethernet cable
+  capabilities:
+   - ip-networking

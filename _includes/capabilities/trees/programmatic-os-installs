@@ -1,0 +1,12 @@
+platform:deployer ─┐
+                   ├ ethernet ─────────────┐
+                   ├ ip-network ───────────┤
+                   ├ dhcp ─────────────────┤
+                   ├ pxe  ─────────────────┤
+                   ├ tftp ─────────────────┤
+                   ├ http ─────────────────┤
+                   ├ serial-communication ─┤
+                   └ minicom ──────────────┤
+component:usb-2-serial-adapter ────────────┤
+component:serial-cable ────────────────────┤
+                                           └ programmatic-os-installs

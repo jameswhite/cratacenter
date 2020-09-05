@@ -1,0 +1,5 @@
+# a 'platform' consists of an OS running on implementation of architecture
+platform:
+  prerequisites:
+    - host (any)
+    - operating-system (any compatible with host architecture)

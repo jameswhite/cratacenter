@@ -1,0 +1,6 @@
+# an 'architecture' is a type of hardware
+# (e.g. amd64, arm64, armel, armhf, i386, mips, mipsel, powerpc, ppc64el, s390x, sparc)
+# it provides an architecture type
+architecture:
+  capabilities:
+    - arch:(type)

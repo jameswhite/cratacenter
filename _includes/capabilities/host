@@ -1,0 +1,5 @@
+# an 'host' is a specific implementation of a architecture
+# (e.g. macbook-pro-16, rasberry-pi)
+host:
+  prerequisites:
+    - arch:(type)

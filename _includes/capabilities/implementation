@@ -1,0 +1,6 @@
+# an 'implementation' is a language-specific, instance of a capability
+# implementations require a platform
+# (e.g. minicom running on a rasberry pi)
+implementation:
+  prerequisites:
+    - platform:(type)

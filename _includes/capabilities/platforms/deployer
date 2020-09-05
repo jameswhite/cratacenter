@@ -1,0 +1,9 @@
+deployer:
+  prereqs:
+    - image-burning
+    - ip-networking
+  capabilities:
+    - tftp
+    - dhcp
+    - pxe
+    - http

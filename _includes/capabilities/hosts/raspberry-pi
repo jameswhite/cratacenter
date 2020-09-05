@@ -1,0 +1,10 @@
+workstation:
+  prereqs:
+   - platform (any)
+   - ip-networking
+  capabilities:
+   - ethernet-port
+   - wifi-hardware
+   - image-burning
+   - file-editing
+   - file-transfer

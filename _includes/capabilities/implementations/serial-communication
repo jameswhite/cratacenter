@@ -1,0 +1,4 @@
+serial-communication:
+  prereqs:
+    - serial-port
+    - null-modem-cable

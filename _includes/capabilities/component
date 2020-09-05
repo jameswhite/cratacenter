@@ -1,0 +1,5 @@
+# an 'component' is a piece of equipment that can be utilized by a platform,
+# but may not be platform specific, an implementation may require them
+# (e.g. wifi-hardware for ip-networking)
+component:
+  provides:

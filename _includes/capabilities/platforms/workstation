@@ -1,0 +1,6 @@
+bragi:
+  prereqs:
+   - hosts/macbook-pro
+   - operating-systems/macos
+  capabilities:
+   - platform: amd64/macos
