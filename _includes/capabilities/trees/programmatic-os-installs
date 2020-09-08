@@ -9,4 +9,4 @@ platform:deployer ─┐
                    └ minicom ──────────────┤
 component:usb-2-serial-adapter ────────────┤
 component:serial-cable ────────────────────┤
-                                           └ programmatic-os-installs
+                                           └ programmatic-os-installs:openbsd
