@@ -1,0 +1,73 @@
+---
+layout: page
+title: "etcfiles"
+date: 2021-06-11 10:00:00 -0500
+---
+<!--
+<p>I need a way to manage my configuration files on OpenBSD. I'd like to be able to diff the changes I'm about to make before they're applied. I'd like to diff them with the live system and not just in git. The process should be:</p>
+<ol>
+  <li>Create a new branch in git</li>
+  <li>Cut a pull-request</li>
+  <li>Perform a no-operation (noop) deploy, that returns a diff between the desired changes and the running system's changes</li>
+  <li>Get reviews and approvals</li>
+  <li>Perform a "branch" deploy that pushes the changes to the system</li>
+  <li>Merge the branch into master.</li>
+</ol>
+-->
+
+<pre>
+<span class="inner-pre" style="font-size: 10px; font-family: Courier,monaco;">
+            some router
+     ┌────────────────────────┐
+       WAN (Public Internet)
+       DMZ (optional) ──────────────────────────────────────────┐
+   ┌─  LAN (Private Intranet)                                   │
+   │ └────────────────────────┘                                 │
+   │                                                            │
+   │                                                            │
+   │                                                            │
+   │          deployer                   workstation            │
+   │ ┌──────────────────────────┐    ┌────────────────────┐     │
+   └─ wlan0    (10.252.0.119/24) ─┬── en0 (10.252.0.27/24)      │
+   ┌─ eth0    (198.51.100.33/27)  └── en10 (10.252.0.2624)      │
+   │  eth0.11  (10.250.11.10/24)     └────────────────────┘     │
+   │  eth0.256  (10.250.0.10/24)│                               │
+   │ └──────────────────────────┘                               │
+   │                                                            │
+   │                                                            │
+   │                                                            │
+   │           vali                      hermod                 │
+   │ ┌──────────────────────┐   ┌───────────────────────┐       │
+   │  em1 (outside,static) ────── em1 (outside,static) ─────────┘
+   │  em2 (vlans) ─────────────── em2 (vlans) ── all vlans ──┐
+   └─ em0 (198.51.100.36/27) ──── em0 (198.51.100.37/27) ─┐  │
+      em3 (pfsync) ────────────── em3 (pfsync)            │  │
+      em4 (cross-connect) ─────── em4 (cross-connect)     │  │
+     └──────────────────────┘   └───────────────────────┘ │  │
+                                                          │  │
+                                                          │  │
+                         ESXi (3 ea.)                     │  │
+                   ┌──────────────────────┐               │  │
+                    198.51.100.[42-44]/27 ── svc console ─┘  │
+ ┌── storage vlan ──                                         │
+ │ ┌─ server vlans ─                                         │
+ │ │               └──────────────────────┘                  │
+ │ │                                                         │
+ │ │                       Servers                           │
+ │ │               ┌──────────────────────┐                  │
+ │ ├─── vlan 10 ────                      ──── vlan 10 ──────┤
+ │ ├─── vlan 11 ────                      ──── vlan 11 ──────┤
+ │ ├─── vlan 12 ────                      ──── vlan 12 ──────┤
+ │ ├─── ... ... ────                      ──── ... ... ──────┤
+ │ └─── vlan NN ────                      ──── vlan NN ──────┤
+ │                 └──────────────────────┘                  │
+ │                                                           │
+ │                        Storage                            │
+ │                ┌──────────────────────┐                   │
+ └─ storage vlan ─                       ─── storage vlan ───┘
+                  └──────────────────────┘
+
+
+</span>
+</pre>
+
