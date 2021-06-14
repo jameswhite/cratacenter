@@ -3,18 +3,6 @@ layout: page
 title: "etcfiles"
 date: 2021-06-11 10:00:00 -0500
 ---
-<!--
-<p>I need a way to manage my configuration files on OpenBSD. I'd like to be able to diff the changes I'm about to make before they're applied. I'd like to diff them with the live system and not just in git. The process should be:</p>
-<ol>
-  <li>Create a new branch in git</li>
-  <li>Cut a pull-request</li>
-  <li>Perform a no-operation (noop) deploy, that returns a diff between the desired changes and the running system's changes</li>
-  <li>Get reviews and approvals</li>
-  <li>Perform a "branch" deploy that pushes the changes to the system</li>
-  <li>Merge the branch into master.</li>
-</ol>
--->
-
 <pre>
 <span class="inner-pre" style="font-size: 10px; font-family: Courier,monaco;">
             some router
@@ -67,7 +55,5 @@ date: 2021-06-11 10:00:00 -0500
  └─ storage vlan ─                       ─── storage vlan ───┘
                   └──────────────────────┘
 
-
 </span>
 </pre>
-
